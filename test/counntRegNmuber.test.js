@@ -13,7 +13,7 @@ describe("The countRegNumber function ", function() {
       assert.equal(1, countRegNumber("CY 123-223, CA 123-123"));
     });
     
-    it("should return 2 - but the parameter needs work'", function() {
+    it("should return 2 ", function() {
       var EXPECTED_COUNT = 2;
       
       // only change code below this line in this function to make this test pass
@@ -21,7 +21,7 @@ describe("The countRegNumber function ", function() {
       assert.equal(EXPECTED_COUNT , countRegNumber("CY 123-123, CJ 123-123"));
     });
     
-    it("should return 5 - but the parameter needs work'", function() {
+    it("should return 5 ", function() {
       var EXPECTED_COUNT = 5;
       
       // only change code below this line in this function to make this test pass
