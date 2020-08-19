@@ -7,17 +7,18 @@ describe("Shows where the number plate is from", function() {
     
     
         it("Plate registration CY should return Bellville"  ,function(){ 
-            var regNumber="CY";
-            assert.equal(fromWhere(regNumber), "Bellville");
+            // var plate="CY 124-123"
+            // var regNumber="CY 123-456";
+            assert.equal(fromWhere("CY 123-456"), "Bellville");
         });
         it("Plate registration CJ should return Paarl  ",function(){ 
-            var regNumber="CJ";
+            // var regNumber="CJ 123-456";
         
-        assert.equal(fromWhere(regNumber),"Paarl");
+        assert.equal(fromWhere("CJ 123-456"),"Paarl");
     });
     it("Plate registration CA should return Cape Town",function(){ 
-        var regNumber="CA";
-    assert.equal(fromWhere(regNumber),"Cape Town");
+        // var regNumber="CA 123-456";
+    assert.equal(fromWhere("CA 123-456"),"Cape Town");
     });
  
 });
